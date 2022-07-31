@@ -5,7 +5,7 @@ function monitoring() {
     youtube: '#count > ytd-video-view-count-renderer > .ytd-video-view-count-renderer',
     tiktok: 'div[data-e2e="live-people-count"]',
     liveName: 'teste',
-    time: 30000,
+    time: 60000,
     debugging: false
   }
 

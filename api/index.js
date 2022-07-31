@@ -22,6 +22,7 @@ const socialLiveMonitoring = async (req, res) => {
     // Preserva os dados brutos recebidos na requisição
     body.rawData = JSON.stringify(body);
     body.liveCount = cleanData(body);
+    addTimestamp(body);
 
     trace(body);
     insertRowsAsStream(body);
@@ -50,16 +51,16 @@ function cleanData(body) {
 }
 
 /**
- * Adiciona o atributo data para o objeto, contendo o timestamp do momento da execução
- * @param {Object} data Objeto
+ * Adiciona o atributo date para o objeto, contendo o timestamp do momento da execução
+ * @param {Object} body Objeto
  * @returns {Object} Objeto com o atributo no padrão yyyy-mm-ddThh:mm:ss
  */
-function addTimestamp(data) {
+function addTimestamp(body) {
   let [date, time] = new Date().toLocaleString('pt-BR', { timeZone: 'America/Sao_Paulo' }).split(' ');
   date = date.split('/');
   let timestamp = `${date[2]}-${date[1]}-${date[0]}T${time}`;
-  data.data = timestamp;
-  return data;
+  body.date = timestamp;
+  return body;
 }
 
 /**
