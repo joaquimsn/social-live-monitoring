@@ -19,7 +19,7 @@
   },
   {
     "name": "liveCount",
-    "type": "FLOAT64",
+    "type": "FLOAT",
     "mode": "NULLABLE",
     "description": "Quantidade de usuários ativo"
   },

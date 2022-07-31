@@ -4,8 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "local": "functions-framework --target=socialLiveMonitoring --signature-type=http --port 8080"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@google-cloud/functions-framework": "^3.1.2"
+  },
+  "dependencies": {
+    "@google-cloud/bigquery": "^6.0.1"
+  }
 }
