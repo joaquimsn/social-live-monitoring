@@ -1,0 +1,32 @@
+[
+  {
+    "name": "date",
+    "type": "DATETIME",
+    "mode": "REQUIRED",
+    "description": "Datatime com timezone America/Sao_Paulo"
+  },
+  {
+    "name": "platform",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Identificação da plataforma"
+  },
+  {
+    "name": "liveName",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Nome da live"
+  },
+  {
+    "name": "liveCount",
+    "type": "FLOAT64",
+    "mode": "NULLABLE",
+    "description": "Quantidade de usuários ativo"
+  },
+  {
+    "name": "rawData",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "JSON bruto recebido na API"
+  }
+]
