@@ -1,5 +1,8 @@
 # social-live-monitoring
 Com esse projeto você pode monitorar os picos de usuários ativos durante as lives no youtube e tiktok, de forma simples e estruturada. 
+
+<img src="./diagram-live-monitoring.jpg"></img>
+
 ## Como executar
 
 ### 1. Criar a cloud function e tabela no BQ
